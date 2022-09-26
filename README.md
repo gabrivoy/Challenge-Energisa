@@ -4,7 +4,7 @@ This notebook presents a solution to a fairly popular problem in various busines
 the Data Science community: time-series forecasting.
 
 The notebook was part of a technical test I did as I was interviewing for a Data Scientist
-position in this specific company. The one condition on the development of this test was the
+position for this company. The one condition on the development of this test was the
 timebox available to develop both the analysis and the model: **6 hours**. I've received the data
 and returned my analysis and results 6 hours later.
 
@@ -57,7 +57,7 @@ to us as an intuition. The results can be seen on the images [1] and [2] below:
 
 ![Second Image](/model_images/results_ARIMA_zoomed.jpg "ARIMA model results zoomed in")
 
-**[2] Figure:** ARIMA model results shown on a larger portion of the time-series.
+**[2] Figure:** ARIMA model results zoomed in the predictions.
 
 I had a few more minutes before the time to return the test, so I decided to use a autoML open package
 to see other models performance, and see if the ARIMA would be the best performer for this case. We've
