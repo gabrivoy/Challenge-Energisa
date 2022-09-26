@@ -22,7 +22,7 @@ I check the number of lines, columns, types of the data, missing values, all com
 checks that a Data Scientist usually do when it gets a new dataset. Then, I engineer the columns that
 have date and time properties into a datetime index and convert the string data into a float to make
 calculations, also changing it's name to "value", to be more generic, although, probably we're talking
-kW/h (killowats per hour) on our measurements.
+kW/h ([wiki: killowats per hour](https://en.wikipedia.org/wiki/Kilowatt-hour)) on our measurements.
 
 ### 2. Exploratory data analysis
 
@@ -43,4 +43,19 @@ test.
 
 ### 3. Modelling and results (+ autoML bonus part at the end).
 
-In this part, I was already running short on time
+In this part, I decided to fit a ARIMA model. I used the `diff` method to create the series differentiations 
+and the `statsmodels`'s `acf` and `pacf` plots to set the parameters `p` (autoregressive) and `q` (moving average).
+
+After that I realized was already running short on time and decided to proceed without really taking
+too much care in the data splitting. I've described that decision on the notebook and as result of this, 
+I've got an overfitted model, but got some predictions aligned with what the exploratory analysis gave
+to us as an intuition. The results can be seen on the images below:
+
+![First Image](/model_images/results_ARIMA.png "ARIMA model results")
+
+[1] ARIMA model results shown on a larger portion of the time-series.
+
+![Second Image](/model_images/results_ARIMA_zoomed.png "ARIMA model results zoomed in")
+
+[2] ARIMA model results shown on a larger portion of the time-series.
+
