@@ -38,12 +38,12 @@ on the analysis.
 
 To end this section, I use the `statsmodels` library to decompose the series, look at the seasonal, trend
 and residual plots, the series autocorrelation and partial autocorrelation and checked it's stationarity
-using the Augmented Dickey-Fuller ([wiki:ADF](https://en.wikipedia.org/wiki/Augmented_Dickey%E2%80%93Fuller_test))
+using the Augmented Dickey-Fuller ([wiki: ADF](https://en.wikipedia.org/wiki/Augmented_Dickey%E2%80%93Fuller_test))
 test.
 
 ### 3. Modelling and results (+ autoML bonus part at the end).
 
-In this part, I decided to fit a ARIMA model. I used the `diff` method to create the series differentiations 
+In this part, I decided to fit a AutoRegressive Integrated Moving Average model ([wiki: ARIMA](https://en.wikipedia.org/wiki/Autoregressive_integrated_moving_average)). I used the `diff` method to create the series differentiations 
 and the `statsmodels`'s `acf` and `pacf` plots to set the parameters `p` (autoregressive) and `q` (moving average).
 
 After that I realized was already running short on time and decided to proceed without really taking
@@ -61,7 +61,8 @@ to us as an intuition. The results can be seen on the images [1] and [2] below:
 
 I had a few more minutes before the time to return the test, so I decided to use a autoML open package
 to see other models performance, and see if the ARIMA would be the best performer for this case. We've
-got a fairly good performance for the ARIMA model, being only second on the RMSE to the equally evaluated
+got a fairly good performance for the ARIMA model, being only second on the Root-Mean-Square Error metric
+([wiki: RMSE](https://en.wikipedia.org/wiki/Root-mean-square_deviation)) to the equally evaluated
 Linear and Ridge Regressors with Deseasonalization and Detrending.
 
 Both models shown a drop on the energy consumption, with the change being the slope of the curve on how
