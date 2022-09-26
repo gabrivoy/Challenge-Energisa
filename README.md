@@ -63,7 +63,15 @@ I had a few more minutes before the time to return the test, so I decided to use
 to see other models performance, and see if the ARIMA would be the best performer for this case. We've
 got a fairly good performance for the ARIMA model, being only second on the Root-Mean-Square Error metric
 ([wiki: RMSE](https://en.wikipedia.org/wiki/Root-mean-square_deviation)) to the equally evaluated
-Linear and Ridge Regressors with Deseasonalization and Detrending.
+Linear and Ridge Regressors with Deseasonalization and Detrending. The prediction values are presented
+on the table below.
+
+|Datetime|Predictions (ARIMA)|Preditctions (LR)|
+|---|---|---|
+|2020-08-01 00:00:00|30990.59|29596.87|
+|2020-08-01 01:00:00|30605.15|27890.15|
+|2020-08-01 02:00:00|30347.15|26775.03|
+|2020-08-01 03:00:00|30174.59|25913.73|
 
 Both models shown a drop on the energy consumption, with the change being the slope of the curve on how
 fast the consumption would go down for the forecasted hours.
