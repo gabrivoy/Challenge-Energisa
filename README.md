@@ -66,12 +66,12 @@ got a fairly good performance for the ARIMA model, being only second on the Root
 Linear and Ridge Regressors with Deseasonalization and Detrending. The prediction values are presented
 on the table below.
 
-|Datetime|Predictions (ARIMA)|Preditctions (LR)|
-|---|---|---|
-|2020-08-01 00:00:00|30990.59|29596.87|
-|2020-08-01 01:00:00|30605.15|27890.15|
-|2020-08-01 02:00:00|30347.15|26775.03|
-|2020-08-01 03:00:00|30174.59|25913.73|
+|Datetime|Predictions (ARIMA)|Preditctions (LR)|Diff (abs)|Diff (%)|
+|---|---|---|---|---|
+|2020-08-01 00:00:00|30990.59|29596.87|1393.72|4.49|
+|2020-08-01 01:00:00|30605.15|27890.15|2715.00|8.87|
+|2020-08-01 02:00:00|30347.15|26775.03|3572.12|11.77|
+|2020-08-01 03:00:00|30174.59|25913.73|4260.86|14.12|
 
 Both models shown a drop on the energy consumption, with the change being the slope of the curve on how
 fast the consumption would go down for the forecasted hours.
