@@ -51,11 +51,25 @@ too much care in the data splitting. I've described that decision on the noteboo
 I've got an overfitted model, but got some predictions aligned with what the exploratory analysis gave
 to us as an intuition. The results can be seen on the images below:
 
-![First Image](/model_images/results_ARIMA.png "ARIMA model results")
+![First Image](/model_images/results_ARIMA.jpg "ARIMA model results")
 
 [1] ARIMA model results shown on a larger portion of the time-series.
 
-![Second Image](/model_images/results_ARIMA_zoomed.png "ARIMA model results zoomed in")
+![Second Image](/model_images/results_ARIMA_zoomed.jpg "ARIMA model results zoomed in")
 
 [2] ARIMA model results shown on a larger portion of the time-series.
 
+I had a few more minutes before the time to return the test, so I decided to use a autoML open package
+to see other models performance, and see if the ARIMA would be the best performer for this case. We've
+got a fairly good performance for the ARIMA model, being only second on the RMSE to the equally evaluated
+Linear and Ridge Regressors with Deseasonalization and Detrending.
+
+Both models shown a drop on the energy consumption, with the change being the slope of the curve on how
+fast the consumption would go down for the forecasted hours.
+
+# Conclusion
+
+This test was a very fun exercise to do, and I would've loved to do it with more hours or a few days to 
+better tune my model and manually tune other models too, play with the splits for the timeseries and the
+possible parameter optimizations. Also, I would love to test other famous time-series libraries on this
+exercise such as tsfresh to create more features, autoTS, darts and facebook Prophet.
