@@ -49,15 +49,15 @@ and the `statsmodels`'s `acf` and `pacf` plots to set the parameters `p` (autore
 After that I realized was already running short on time and decided to proceed without really taking
 too much care in the data splitting. I've described that decision on the notebook and as result of this, 
 I've got an overfitted model, but got some predictions aligned with what the exploratory analysis gave
-to us as an intuition. The results can be seen on the images below:
+to us as an intuition. The results can be seen on the images [1] and [2] below:
 
 ![First Image](/model_images/results_ARIMA.jpg "ARIMA model results")
 
-[1] ARIMA model results shown on a larger portion of the time-series.
+**[1] Figure:** ARIMA model results shown on a larger portion of the time-series.
 
 ![Second Image](/model_images/results_ARIMA_zoomed.jpg "ARIMA model results zoomed in")
 
-[2] ARIMA model results shown on a larger portion of the time-series.
+**[2] Figure:** ARIMA model results shown on a larger portion of the time-series.
 
 I had a few more minutes before the time to return the test, so I decided to use a autoML open package
 to see other models performance, and see if the ARIMA would be the best performer for this case. We've
