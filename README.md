@@ -22,7 +22,7 @@ I check the number of lines, columns, types of the data, missing values, all com
 checks that a Data Scientist usually do when it gets a new dataset. Then, I engineered the columns that
 have date and time properties into a datetime index and convert the string data into a float to make
 calculations, also changing it's name to "value", to be more generic, although, probably we're talking
-kW/h ([wiki: killowats per hour](https://en.wikipedia.org/wiki/Kilowatt-hour)) on our measurements.
+kWh ([wiki: killowats-hour](https://en.wikipedia.org/wiki/Kilowatt-hour)) on our measurements.
 
 ### 2. Exploratory data analysis
 
